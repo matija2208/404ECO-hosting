@@ -606,6 +606,11 @@ justify-content: space-evenly;
   font-size: 18px;
   margin: 10 px;
 }
+@media (max-width: 576px) {
+  #post_tekst{
+    width: 60%;
+  }
+}
 .post{
   background-color: #5bea9790;
   border-radius: 5px;
