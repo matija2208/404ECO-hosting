@@ -99,7 +99,7 @@ async function bigBoy(id)
                 </p>   
             </div>
             <img src="${post.slika}" class="img-fluid slika_post" /> 
-        </div>
+        </div><br><br>
     `
     
     var t=true;
