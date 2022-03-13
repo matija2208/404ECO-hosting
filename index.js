@@ -24,11 +24,11 @@ app.use(cors());
 
 //deo za hostovanje fronta
 app.get("/", function(req,res){
-    res.sendFile('/home/smorovs/test/files/index.html');
+    res.sendFile('/home/smorovs/404ECO-hosting/files/index.html');
 });
 app.get("/:file", function(req,res){
     var file=req.params.file;
-    res.sendFile('/home/smorovs/test/files/' + file);
+    res.sendFile('/home/smorovs/404ECO-hosting/files/' + file);
 });
 
 //userAPI
