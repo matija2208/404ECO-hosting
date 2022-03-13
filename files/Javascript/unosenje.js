@@ -2,7 +2,7 @@ var link;
 
 if(localStorage.getItem("id")===null)
 {
-    location.href="www.404.in.rs";
+    location.href="/";
 }
 
 
