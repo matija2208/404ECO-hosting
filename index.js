@@ -31,7 +31,7 @@ app.get("/:file", async function(req,res){
     var file=req.params.file;
     try
     {
-        await res.sendFile('/home/smorovs/404ECO-hosting/files/' + file);
+        await res.sendFile('/home/smorovs/404ECO-hosting/files/' + String(file));
     }
     catch(err)
     {
