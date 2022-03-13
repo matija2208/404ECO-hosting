@@ -209,7 +209,7 @@ async function getUsername(){
   else
   {
     try{
-      var user = await axios.get("www.404.in.rs/api/users/" + id);
+      var user = await axios.get("/api/users/" + id);
       return user.data.user.userName;
     }
     catch(err){
@@ -227,7 +227,7 @@ async function getType(){
   else
   {
     try{
-      var user = await axios.get("www.404.in.rs/api/users/" + id);
+      var user = await axios.get("/api/users/" + id);
       return user.data.user.tipKorisnika;
     }
     catch(err){

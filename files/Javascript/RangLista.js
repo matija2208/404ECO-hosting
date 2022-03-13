@@ -3,7 +3,7 @@ load();
 async function getData()
 {
     try{
-        var all_users=await axios.get("www.404.in.rs/api/users");
+        var all_users=await axios.get("/api/users");
         
         return all_users.data.users;
     }

@@ -111,7 +111,7 @@ function validPosting(){
 }
 
 async function objaviPost(){
-    var LINK="www.404.in.rs";;
+
     var entries = document.getElementById("formaPost");
     
     var arr = [];
@@ -142,7 +142,7 @@ async function objaviPost(){
     };
 
     try{
-        var res = await axios.post(LINK + "/api/posts",new_post);
+        var res = await axios.post("/api/posts",new_post);
         console.log(res);
         location.href="Postovi.html";
     }

@@ -1,9 +1,8 @@
 async function getData()
 {
-    link="www.404.in.rs";
     try
     {
-        var users=await axios.get(link + "/api/users");
+        var users=await axios.get("/api/users");
         return users.data.users;
     }
     catch(err)

@@ -69,7 +69,6 @@ function regex_valid_repeat(entries){
 }
 
 async function registruj(entries){
-    var link="www.404.in.rs";
     if(!extraLogin)
     {
         let newUser={
@@ -79,7 +78,7 @@ async function registruj(entries){
         };
         try
         {
-            var res=await axios.post(link + "/api/users",newUser);
+            var res=await axios.post("/api/users",newUser);
             //console.log(res);
         }
         catch(err)
@@ -98,7 +97,7 @@ async function registruj(entries){
         };
         try
         {
-            var res=await axios.post(link + "/api/users",newUser);
+            var res=await axios.post("/api/users",newUser);
             //console.log(res);
         }
         catch(err)
@@ -114,7 +113,7 @@ async function getData()
 {
     try
     {
-        var users=await axios.get("www.404.in.rs/api/users");
+        var users=await axios.get("/api/users");
         return users.data.users;
     }
     catch(err)

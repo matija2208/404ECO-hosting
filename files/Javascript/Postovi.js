@@ -2,10 +2,9 @@ load();
 
 async function getData()
 {
-    var link="www.404.in.rs";
     try
     {
-        var users=await axios.get(link + "/api/users");
+        var users=await axios.get("/api/users");
         return users.data.users;
     }
     catch(err)
@@ -61,8 +60,7 @@ function render(post, i)
 
 async function load()
 {
-    var link="www.404.in.rs";
-    var all_posts=(await axios.get(link+"/api/posts")).data.postss;
+    var all_posts=(await axios.get("/api/posts")).data.postss;
     
     for(let i=0;i<all_posts.length;i++)
     {
