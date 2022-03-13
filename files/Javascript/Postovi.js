@@ -72,7 +72,7 @@ async function load()
 async function getPost(id)
 {
     console.log(id);
-    console.log(link+"/api/posts/"+id)
+    console.log("/api/posts/"+id)
     try{
         var post = (await axios.get("/api/posts/"+id));
         
