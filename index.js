@@ -23,6 +23,7 @@ app.use(express.json());
 //disable-ovanje cors greske
 app.use(cors());
 
+app.use(express.static(__dirname + '/public' ));
 //deo za hostovanje fronta
 app.get("/", function(req,res){
     res.sendFile('/home/smorovs/404ECO-hosting/files/index.html');
