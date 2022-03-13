@@ -10,7 +10,9 @@ async function connect_baza(){
 
         //konekt
         const connection = await mongoose.connect(link, {
-            
+            useNewUrlParser: true,
+            useCreateIndex: true,
+            useUnifiedTopology: true
         });
 
         console.log("Baza uspesna");
