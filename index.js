@@ -5,6 +5,7 @@ const cors = require("cors");
 const baza = require("./BAZA/baza");
 const user = require("./BAZA/korisnik");
 const post = require("./BAZA/post");
+const path = require("path");
 
 const PORT=80;
 
@@ -29,7 +30,7 @@ app.get("/", function(req,res){
 app.get("/:file", function(req,res){
     var file=req.params.file;
     console.log(file);
-    res.sendFile('/home/smorovs/404ECO-hosting/files/' + file);
+    res.sendFile(path.join('/home/smorovs/404ECO-hosting/files/',file));
 });
 
 //userAPI
