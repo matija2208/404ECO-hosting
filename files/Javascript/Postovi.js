@@ -72,10 +72,9 @@ async function load()
 async function getPost(id)
 {
     console.log(id);
-    var link="www.404.in.rs";
     console.log(link+"/api/posts/"+id)
     try{
-        var post = (await axios.get(link+"/api/posts/"+id));
+        var post = (await axios.get("/api/posts/"+id));
         
         return post.data.postss;
     }
@@ -152,10 +151,10 @@ async function bigBoy(id)
 
 async function updatePoints(poeni)
 {
-    var link="www.404.in.rs";
-    console.log(link+"/api/users/1/"+localStorage.getItem("id"));
+    
+    console.log("/api/users/1/"+localStorage.getItem("id"));
     try{
-        await axios.put(link+"/api/users/1/"+localStorage.getItem("id"),{poeni:poeni});
+        await axios.put("/api/users/1/"+localStorage.getItem("id"),{poeni:poeni});
         console.log(1);
     }
     catch(err)
@@ -170,7 +169,7 @@ async function proveriOdgovore(id)
     console.log(post);
     var poeni = 0;
    
-    await axios.put("www.404.in.rs/api/posts/"+id,{id:localStorage.getItem("id")});
+    await axios.put("/api/posts/"+id,{id:localStorage.getItem("id")});
 
     for(let i = 0; i<post.brojPitanja;i++)
     {
