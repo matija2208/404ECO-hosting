@@ -680,3 +680,11 @@ justify-content: space-evenly;
     margin-left: 15%;
   }
 }
+.mzs{
+  width: 60%;
+}
+@media (max-width: 770px) {
+  .mzs{
+    width: 90%;
+  }
+}

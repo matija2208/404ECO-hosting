@@ -74,7 +74,7 @@ body{
     line-height: 45px;  
     margin-bottom: 10px;
     font-size: 1em;
-    color:  rgba(0,0,0,.4);
+    color:  rgb(0, 0, 0);
     border-radius: 5px;
     padding-left: 10px;
   }
@@ -105,7 +105,7 @@ body{
     margin-bottom: 10px;
     font-size: 1em;
     border-radius: 5px;
-    color: rgba(0,0,0,.4);
+    color: rgb(0, 0, 0);
     padding-left: 10px;
   }
 
@@ -120,7 +120,7 @@ body{
     margin-bottom: 10px;
     font-size: 1em;
     border-radius: 5px;
-    color: rgba(0,0,0,.4);
+    color: rgb(0, 0, 0);
     padding-left: 10px;
   }
 
@@ -241,7 +241,7 @@ hr {
     line-height: 45px;  
     margin-bottom: 10px;
     font-size: 1em;
-    color:  rgba(0,0,0,.4);
+    color:  rgb(0, 0, 0);
     border-radius: 5px;
 }
 
