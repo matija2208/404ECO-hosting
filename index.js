@@ -22,7 +22,7 @@ baza();
 app.use(express.json());
 //disable-ovanje cors greske
 app.use(cors());
-app.use(express.static('./'));
+
 //deo za hostovanje fronta
 app.get("/", function(req,res){
     res.sendFile('/home/smorovs/404ECO-hosting/files/index.html');
@@ -35,6 +35,7 @@ app.get("/:file", async function(req,res){
     }
     catch(err)
     {
+        console.log(file);
         console.log(err);
     }
     
