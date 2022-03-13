@@ -30,7 +30,7 @@ app.get("/", function(req,res){
 app.get("/:file", function(req,res){
     var file=req.params.file;
     console.log(file);
-    res.sendFile(path.join('/home/smorovs/404ECO-hosting/files/',file));
+    res.sendFile(path.join('/home/smorovs/404ECO-hosting/files',file));
 });
 
 //userAPI
