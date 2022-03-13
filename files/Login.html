@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404!ECO-Login</title>
+        <link rel="stylesheet" href=".//login.css">
+        <link rel="stylesheet" href="./stil.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="Slike/planeta.png" rel="icon">
+
+    </head>
+    <body>
+        <div class="log-box">
+            <div class='signup'>
+                <br>
+                <img src="../FRONT/Slike/logo.png" width="30%" height="30%"> 
+                <form id="formaLogin">
+                  <h1 class="sing_h1">PRIJAVI SE</h1><br>
+
+                  <input id="mail" type='text' placeholder='Email/Korisničko ime:'  />
+
+                  <input id="lozinka" type='password' placeholder='Lozinka:'  />
+                  <span class="RegexWarning hidden" id="LoginError"> Uneti podaci se ne poklapaju sa postojecim nalogom.</span><br>
+
+                  <input class="dugme" type='button' value="ULOGUJ SE" onclick="Provera()"></input><br><br>
+                  <a href="Registracija.html" class="dugme1">REGISTRUJ SE</a><br><br><br>
+                  <a href="index.html" id="dugmenazad"><i class="fas fa-reply"></i> NAZAD</a><br><br>
+                </form>
+             </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="Javascript/Login.js"></script>
+    </body> 
+</html>    

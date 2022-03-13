@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404!ECO-Objava</title>
+        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="boot/css/style-imgur.css">
+        <link href="Slike/planeta.png" rel="icon">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    </head>
+    <body>
+        <div class="log-box">
+            <div class='signup'>
+                <br>
+                <img src="../FRONT/Slike/logo.png" width="30%" height="30%"> 
+                <form id="formaPost">
+                  <h1 class="sing_h1">NAPRAVI OBJAVU</h1><br>
+
+                  <input id="naslov_input" type='text' placeholder='Naslov:'/>
+                  <textarea id="sadrzaj_input" type='text' style="resize: vertical;" placeholder='Sadržaj objave, slobodno stavljajte linkove i potrudite se da je objava interesantna:'></textarea>
+                  <br><br><h1 class="dropzone_narrate">Ubacite neku sliku za vašu objavu:</h1>
+                  <div class="dropzone">
+                    <div class="info"></div>
+                  </div>
+                  <br>
+
+                  <h1 class="dropzone_narrate">Koliki je broj pitanja?</h1>
+                  <input id="num_pitanja_input" type='number' max='10' placeholder='#' onchange="generateTemplates()"/>
+
+                  <form id="formaPitanja">
+                    <div id="Wrapper">
+
+                      
+
+                    </div>
+                  </form>
+
+                  <input class="dugme" type='button' value="OBJAVI LEKCIJU" onclick="validPosting()"></input><br><br>
+                  <span class="RegexWarning Hidden2" id="PostError"> Molimo vas da popunite sve informacije lekcije pre objave.<br><br></span>
+
+                  <a href="index.html" id="dugmenazad"><i class="fas fa-reply"></i> NAZAD</a><br><br>
+                </form>
+             </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="Javascript/imgur.js"></script>
+        <script src="Javascript/unosenje.js"></script>
+       
+    </body> 
+</html>    

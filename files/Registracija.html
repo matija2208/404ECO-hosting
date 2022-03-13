@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404!ECO-Registracija</title>
+    <link href="Slike/planeta.png" rel="icon">
+    <!-- <link rel="stylesheet" href="./stil.css"> -->
+    <link rel="stylesheet" href="./login.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+    <div class="log-box">
+        <div class='signup'>
+          <br>
+          <img src="../FRONT/Slike/logo.png" width="30%" height="30%">
+          <h1 class="sing_h1">REGISTRUJ SE!</h1><br>
+           <form id="forma">
+             <!-- IME-->
+            <input type='text' id="ime_input" placeholder='Korisničko ime:'  />
+            <span class="RegexWarning Hidden2" id="EmptyNameWarning"> Molimo vas da unesete korisnicko ime.<br> </span> 
+            <span class="RegexWarning Hidden2" id="ErrorNameWarning"> Ime sme sadrzati samo slova, brojeve i moze biti do 30 karaktera dugacko, bez razmaka.<br></span> 
+            <span class="RegexWarning Hidden2" id="SameNameWarning"> Ovo korisnicko ime je vec zauzeto.<br></span><br>
+            <!-- MAIL-->
+            <input type='text' id="mail_input" placeholder='Email:'  />
+            <span class="RegexWarning Hidden2" id="EmptyMailWarning"> Molimo vas da unesete e-mail adresu.<br></span> 
+            <span class="RegexWarning Hidden2" id="ErrorMailWarning"> Molimo vas da unesete vazecu e-mail adresu (npr. [name]@example.com).<br></span> 
+            <span class="RegexWarning Hidden2" id="SameMailWarning"> Nalog je vec registrovan na ovoj e-mail adresi.<br></span><br>
+            <!-- PASS-->
+            <input type='password' id="pass_input" placeholder='Lozinka:'  />
+            <span class="RegexWarning Hidden2" id="EmptyPassWarning"> Molimo vas da unesete lozinku vaseg naloga.<br></span>
+            <span class="RegexWarning Hidden2" id="ErrorPassWarning"> Lozinka mora sadrzati najmanje 8 karaktera.<br></span><br>
+
+            <input type='password' id="pass_repeat" placeholder='Potvrdi lozinku:'  />
+            <span class="RegexWarning Hidden2" id="EmptyRepeatWarning"> Molimo vas da ponovite lozinku.<br></span> 
+            <span class="RegexWarning Hidden2" id="ErrorRepeatWarning"> Lozinke nisu iste.<br></span><br>
+
+
+            <p  class="BrightText">Da li želite da budete verifikovan korisnik, tj. organizator kvizeva na sajtu?</p>
+            <label class="radioL"> Da <input class="RadioButton" type="radio" name="Verifikacija" value="y" onclick="showDiv()"> </label>
+            <label class="radioR"> Ne <input class="RadioButton" type="radio" name="Verifikacija" value="n" onclick="hideDiv()"> </label><br>
+
+            <div id="ExtraInfoDiv" class="Hidden2">
+
+            <p  class="BrightText">Molimo vas da popunite ova dodatna polja:</p>
+              
+            <input type="tel" id="tel_input" placeholder='Broj telefona:'  />
+            <span class="RegexWarning Hidden2" id="BadTelephoneInput"> Molimo vas da unesete postojeci broj telefona.<br></span>          
+          
+            <p  class="BrightText">Opis vaše organizacije ili škole, slobodno dodajte linkove i ostale stvari:</p>
+            <textarea id="opisInput" type="text" style="resize: vertical;"></textarea>
+            
+            </div> <!--DIV ZA VERIFIKOVANOG ORGANIZATORA-->
+
+            <input class="dugme" type='button' value="REGISTRUJ SE" id="registracija" onclick="ValidirajRegister()" /><br><br><br>
+            <a href="Login.html" class="dugme1">PRIJAVI SE</a><br><br><br><br>
+            <a href="index.html" id="dugmenazad"><i class="fas fa-reply"></i> NAZAD</a><br><br><br>
+           </form>
+        </div>
+      </div>
+
+      <!--SCRIPT IMPORT-->
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script src="Javascript/Registracija.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+[type="file"]{
+    margin-left: 30%;
+}
+@media (max-width: 1150px) {
+    [type="file"]{
+        margin-left: 20%;
+    }
+}
+@media (max-width: 768px) {
+    [type="file"]{
+        margin-left: 10%;
+    }
+}
+@media (max-width: 680px) {
+    [type="file"]{
+        margin-left: 5%;
+    }
+}
