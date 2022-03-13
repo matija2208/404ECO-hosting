@@ -27,10 +27,17 @@ app.use(cors());
 app.get("/", function(req,res){
     res.sendFile('/home/smorovs/404ECO-hosting/files/index.html');
 });
-app.get("/:file", function(req,res){
+app.get("/:file", async function(req,res){
     var file=req.params.file;
-    console.log(file);
-    res.sendFile(path.join('/home/smorovs/404ECO-hosting/files',file));
+    try
+    {
+        await res.sendFile('/home/smorovs/404ECO-hosting/files/' + file);
+    }
+    catch(err)
+    {
+        console.log(err);
+    }
+    
 });
 
 //userAPI
