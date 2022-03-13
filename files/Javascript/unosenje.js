@@ -1,5 +1,11 @@
 var link;
 
+if(localStorage.getItem("id")===null)
+{
+    location.href="www.404.in.rs";
+}
+
+
 function reportInfo(vars, showType = false) {
     if (showType === true); //console.log(typeof vars);
     //console.log(vars);
