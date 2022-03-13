@@ -21,6 +21,7 @@ async function load()
 
     for(let i = 0;i<users.length;i++)
     {
+        console.log(i);
         for(let j = 0; j<i;j++)
         {
             if(users[i].brojPoena>users[j].brojPoena)
