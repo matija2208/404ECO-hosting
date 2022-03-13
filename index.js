@@ -22,21 +22,21 @@ baza();
 app.use(express.json());
 //disable-ovanje cors greske
 app.use(cors());
-
+app.use(express.static('/home/smorovs/404ECO-hosting/files/'));
 //deo za hostovanje fronta
 app.get("/", function(req,res){
-    res.sendFile('/home/smorovs/404ECO-hosting/files/index.html');
+    res.sendFile('index.html');
 });
 app.get("/:file", async function(req,res){
     var file=req.params.file;
     try
     {
-        await res.sendFile('/home/smorovs/404ECO-hosting/files/' + String(file));
+        await res.sendFile(String(file));
     }
     catch(err)
     {
         console.log(file);
-        console.log(err);
+        res.send(err);
     }
     
 });
