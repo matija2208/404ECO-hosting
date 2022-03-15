@@ -91,14 +91,14 @@ async function bigBoy(id)
     var post=await getPost(id);
 
     var STR=`
-        <div id="post_naslov-m">
-            <h7 id="tema_post-m">${post.naslov}</h7>
-            <div class="post-m">    
-                <p id="post_tekst-m">
+        <div id="post_naslov">
+            <h7 id="tema_post">${post.naslov}</h7>
+            <div class="post">    
+                <p id="post_tekst">
                     ${post.tekst} 
                 </p>   
             </div>
-            <img src="${post.slika}" class="img-fluid slika_post-m" /> 
+            <img src="${post.slika}" class="img-fluid slika_post" /> 
         </div><br><br>
     `
     
