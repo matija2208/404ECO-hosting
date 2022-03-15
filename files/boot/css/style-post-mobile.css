@@ -1,0 +1,46 @@
+#post-m{
+    display: block;
+    margin-top: 80px;
+    content: "";
+    clear: both;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  #post_naslov-m{
+    color: var(--boja5);
+    font-size: 40px;
+    text-align: center;
+    margin-right: 0;
+    padding: 10px;
+  }
+  #tema_post-m{
+    margin-bottom: 60px;
+    color: var(--boja5);
+    font-size: 40px;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    #tema_post-m {
+      font-size: 25px;
+    }
+  }
+  #post_tekst-m{
+    color:var(--boja4);
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+  }
+  .post-m{
+    background-color: #5bea9790;
+    border-radius: 5px;
+    border: var(--boja4) solid 3px;
+    width: 60%;
+  }
+  .slika_post-m{
+    border-radius: 5px;
+    border: var(--boja4) solid 3px;
+    margin-top: 10px;
+    width: 500px;
+  }
