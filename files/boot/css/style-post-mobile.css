@@ -1,3 +1,11 @@
+:root{
+  --svetla: #e8fade;
+  --boja1: #8ef0af;
+  --boja2: #5bea97;
+  --boja3: #20c29f;
+  --boja4: #0a4282;
+  --boja5: #009245;
+}
 #post-m{
     display: block;
     margin-top: 80px;
@@ -12,8 +20,12 @@
     color: var(--boja5);
     font-size: 40px;
     text-align: center;
-    margin-right: 0;
     padding: 10px;
+    word-wrap: inherit;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
   }
   #tema_post-m{
     margin-bottom: 60px;
