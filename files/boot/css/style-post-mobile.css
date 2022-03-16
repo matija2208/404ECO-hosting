@@ -46,6 +46,46 @@
       margin-left: 25%;
     }
   }
+  @media (max-width: 575px) {
+    #post_naslov-m{
+      margin-left: 30%;
+      width: 80%;
+    }
+  }
+  @media (max-width: 574px) {
+    #post_naslov-m{
+      margin-left: 5%;
+      width: 60%;
+    }
+  }
+  @media (max-width: 573px) {
+    #post_naslov-m{
+      margin-left: 28%;
+      width: 40%;
+    }
+  }
+  @media (max-width: 415px) {
+    #post_naslov-m{
+      margin-left: 30%;
+    }
+  }
+  @media (max-width: 371px) {
+    #post_naslov-m{
+      margin-left: 32%;
+      width: 35%;
+    }
+  }
+  @media (max-width: 325px) {
+    #post_naslov-m{
+      margin-left: 33%;
+    }
+  }
+  @media (max-width: 325px) {
+    #post_naslov-m{
+      margin-left: 35%;
+      width: 30%;
+    }
+  }
   #post_tekst-m{
     color:var(--boja4);
     font-size: 18px;

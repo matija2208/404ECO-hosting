@@ -6,7 +6,7 @@
     --boja4: #0a4282;
     --boja5: #009245;
   }
-#main2{
+  #main2{
     margin-top: 120px;
 }
 .kartica{
@@ -26,6 +26,7 @@
 }
 .naslov{
     font-size: 25px;
+    word-wrap: break-word;
 }
 @media (max-width: 576px) {
     .levo{
