@@ -11,8 +11,8 @@
     margin-top: 80px;
     content: "";
     clear: both;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
@@ -22,7 +22,7 @@
     text-align: center;
     padding: 10px;
     word-wrap: inherit;
-    margin-left: auto;
+    margin-left: 25%;
   }
   #tema_post-m{
     margin-bottom: 60px;
